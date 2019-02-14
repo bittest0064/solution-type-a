@@ -5,11 +5,13 @@ public class Rectangle extends Shape implements Resizable {
 	private double height;
 
 	public Rectangle(double width, double height) {
-		System.out.println("");
+		return;
 	}
 
 	@Override
 	public void resize(double rate) {
+		width = width*rate;
+		height = height*rate;
 	}
 
 	@Override
